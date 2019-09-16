@@ -20,7 +20,6 @@ class App extends Component {
         const itemText = e.target.value;
         const currentItem = {text: itemText, key: Date.now()};
         this.setState({currentItem});
-        console.log('Hello World !');
     };
 
     addItemHandler = e => {
@@ -34,7 +33,6 @@ class App extends Component {
                 currentItem: {text: '', key: ''}
             })
         }
-        console.log('Add item to the list')
     };
 
     deleteItemHandler = key => {
